@@ -3,9 +3,7 @@ from openai import OpenAI
 
 client = OpenAI(
     # This is the default and can be omitted
-    #api_key=os.environ.get("OPENAI_API_KEY"),
-    #api_key="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"
-    api_key="sk-proj-bF3cGeEfrQueOJZghNFNT3BlbkFJAXSR9hLbxBkE3LuwWxaM"
+    api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
 chat_completion = client.chat.completions.create(
